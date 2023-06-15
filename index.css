@@ -14,6 +14,16 @@ h6 {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 > li {
+  color: #4d4d4c;
+  margin: 5px;
+}
 
 .title {
   font-weight: 100;
@@ -36,6 +46,10 @@ h6 {
 .flex-center {
   display: flex;
   align-items: center;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .grow {
@@ -76,20 +90,32 @@ h6 {
   border-bottom: 1px solid #35549a;
 }
 
+ul {
+  list-style-image: url(./icons/icons8-circle.svg);
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
 /* css for list bullets from stack overflow */
 ul.experience li {
   position: relative; /* so that pseudoelements are positioned relatively to their "li"s*/
   /* use padding-bottom instead of margin-bottom.*/
   margin-bottom: 0; /* This overrides previously specified margin-bottom */
-  padding-bottom: 2.5em;
+  /* padding-bottom: 2.5em; */
 }
 
 ul.experience li:after {
   /* bullets */
-  content: url("http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png");
+  background-image: url(./icons/circle-icon.png);
   position: absolute;
   left: -21px; /*adjust manually*/
   top: 0px;
+  background-size: 5px 5px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
 }
 
 ul.experience li:before {
@@ -104,7 +130,7 @@ ul.experience li:before {
 
 ul.experience li:first-child:before {
   /* first li's line */
-  top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+  top: 14px; /* moves the line down so that it disappears under the bullet. Adjust manually */
 }
 
 ul.experience li:last-child:before {
