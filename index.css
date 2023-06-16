@@ -25,6 +25,10 @@ h6 > li {
   margin: 5px;
 }
 
+ul {
+  list-style-image: url(./icons/icons8-circle.svg);
+}
+
 .title {
   font-weight: 100;
   font-size: 32px;
@@ -90,12 +94,12 @@ h6 > li {
   border-bottom: 1px solid #35549a;
 }
 
-ul {
-  list-style-image: url(./icons/icons8-circle.svg);
-}
-
 .margin-bottom {
   margin-bottom: 2rem;
+}
+
+.word-spacing {
+  word-spacing: 0.4rem;
 }
 
 /* css for list bullets from stack overflow */
